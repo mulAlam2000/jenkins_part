@@ -127,6 +127,14 @@
         <artifactId>jetty-maven-plugin</artifactId>
         <version>8.0.0.M1</version>
       </plugin>
+             <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.11.0</version>  <!-- تحديث إلى أحدث إصدار -->
+            <configuration>
+                <release>17</release>  <!-- استخدم 8 أو 11 أو 17 حسب إصدار JDK لديك -->
+            </configuration>
+        </plugin>
     </plugins>
   </build>
 
