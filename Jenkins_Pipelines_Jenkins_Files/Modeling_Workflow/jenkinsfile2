@@ -20,10 +20,10 @@ pipeline {
         }
         stage('Deploy') {
             input {
-                message 'Deploy?'
-                ok 'Do it!'
+                message 'Do deployment?'
+                ok 'Let's do it!'
                 parameters {
-                    string(name: 'TARGET_ENVIRONMENT', defaultValue: 'PROD', description: 'Target deployment environment')
+                    string(name: 'TARGET_ENVIRONMENT', defaultValue: 'IT', description: 'Target deployment environment')
                 }
             }
             steps {
