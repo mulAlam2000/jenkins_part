@@ -9,7 +9,7 @@ pipeline {
                 auditTools()
             }
         }
-        stage(welcome message){
+        stage(welcomeMessage){
              steps{
                 welcomeMessage()
              }
